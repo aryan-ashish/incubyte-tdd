@@ -1,12 +1,15 @@
+import re
+
 
 def add(numberStr):
     if numberStr == "":
         return 0
     else:
-        numList = numberStr.split(",")
+        numList = re.split(r'[\\n,]', numberStr)
         sumNum = 0
         for num in numList:
-            sumNum += int(num)
+            if num != '':
+                sumNum += int(num)
         return sumNum
 
 
