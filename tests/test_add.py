@@ -15,6 +15,9 @@ class MyTestCase(unittest.TestCase):
     def test_add_with_newline(self):
         self.assertEqual(add("1\n2,3"), 6)
 
+    def test_add_diff_delimiter(self):
+        self.assertEqual(add("//;\n1;2"), 6)
+
 
 if __name__ == '__main__':
     unittest.main()
