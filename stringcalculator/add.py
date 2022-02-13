@@ -3,7 +3,11 @@ def add(numberStr):
     if numberStr == "":
         return 0
     else:
-        return int(numberStr)
+        numList = numberStr.split(",")
+        sumNum = 0
+        for num in numList:
+            sumNum += int(num)
+        return sumNum
 
 
 if __name__ == "__main__":
