@@ -1,6 +1,7 @@
 
 def add(numberStr):
-    pass
+    if numberStr == "":
+        return 0
 
 
 if __name__ == "__main__":
