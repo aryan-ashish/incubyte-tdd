@@ -18,6 +18,9 @@ class MyTestCase(unittest.TestCase):
     def test_add_diff_delimiter(self):
         self.assertEqual(add("//;\n1;2"), 6)
 
+    def test_add_negative_args(self):
+        self.assertEqual(add("//;\n-1;-2"), 6)
+
 
 if __name__ == '__main__':
     unittest.main()
